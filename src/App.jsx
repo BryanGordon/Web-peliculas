@@ -1,4 +1,3 @@
-// import { useRef } from 'react'
 import './App.css'
 import { Movies } from './components/Movies'
 import { useMovies } from './hooks/useMovies'
@@ -20,13 +19,6 @@ function useSearch () {
 
   return ({ error, search, setSearch })
 }
-
-/* La forma controlada de realizar la obtencion de datos de un form
-  con react no es recomendable porque se renderiza cada vez que
-  cambia un caracter de busqueda.
-  La mejor forma es la descontrolada utilizando JS y luego
-  implementar de forma manual las validaciones de las busquedas.
-*/
 
 function App () {
   const [sort, setSort] = useState(false)
